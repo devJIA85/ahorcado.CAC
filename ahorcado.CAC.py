@@ -8,6 +8,73 @@ def seleccionar_palabra():
     return random.choice(palabras)
 
 # Función para mostrar la figura del ahorcado
+def mostrar_ahorcado(intentos):
+    figura = [
+        """
+           +---+
+           |   |
+               |
+               |
+               |
+               |
+        =========
+        """,
+        """
+           +---+
+           |   |
+           O   |
+               |
+               |
+               |
+        =========
+        """,
+        """
+           +---+
+           |   |
+           O   |
+           |   |
+               |
+               |
+        =========
+        """,
+        """
+           +---+
+           |   |
+           O   |
+          /|   |
+               |
+               |
+        =========
+        """,
+        """
+           +---+
+           |   |
+           O   |
+          /|\\  |
+               |
+               |
+        =========
+        """,
+        """
+           +---+
+           |   |
+           O   |
+          /|\\  |
+          /    |
+               |
+        =========
+        """,
+        """
+           +---+
+           |   |
+           O   |
+          /|\\  |
+          / \\  |
+               |
+        =========
+        """
+    ]
+    print(figura[intentos])
 
 
 # Función para adivinar la palabra

@@ -76,7 +76,6 @@ def mostrar_ahorcado(intentos):
     ]
     print(figura[intentos])
 
-
 # Función para adivinar la palabra
 
 

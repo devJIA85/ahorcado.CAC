@@ -83,9 +83,9 @@ def adivinar_palabra(palabra):
     letras_adivinadas = []
 
     while True:
+        mostrar_ahorcado(intentos)
         print("\nPalabra:", ' '.join(palabra_adivinada))
         letra = input("Ingresa una letra: ").lower()
-        mostrar_ahorcado(intentos)
         print("Letras utilizadas:", ', '.join(letras_adivinadas))
 
         if letra in letras_adivinadas:
@@ -100,7 +100,7 @@ def adivinar_palabra(palabra):
                     palabra_adivinada[i] = letra
         else:
             intentos += 1
-            mostrar_ahorcado(intentos)
+            #mostrar_ahorcado(intentos)
             print("Letras utilizadas:", ', '.join(letras_adivinadas))
 
         if ''.join(palabra_adivinada) == palabra:
@@ -120,15 +120,7 @@ def jugar_ahorcado():
         'adivinanzas_correctas': 0,
         'adivinanzas_incorrectas': 0
     }
-    print( """
-           +---+
-           |   |
-               |
-               |
-               |
-               |
-        =========
-        """)
+
 
     while True:
         palabra = seleccionar_palabra()
